@@ -8,7 +8,7 @@ provider "ibm" {
 }
 
 data template_file "userdata" {
-  template = file("${path.module}/templates/userdata.yaml")
+  template = file("userdata.yaml")
 
   vars = {
     username           = var.test_variable
